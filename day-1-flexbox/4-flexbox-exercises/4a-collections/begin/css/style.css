@@ -60,7 +60,7 @@ img{
     margin-bottom: -10px;
     display: block;
     object-fit: cover;
-    /* object-position: 0 -150px; */
+    object-position: 0 -150px;
 }
 
 figure {
