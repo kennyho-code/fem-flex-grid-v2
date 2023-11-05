@@ -75,7 +75,7 @@ figure {
 /* strange open space at the bottom of the box which shows through the transparent overlay - this kills it */
 
 figure img {
-    margin-bottom: -4px;
+    margin-bottom: -10px;
     width: 100%;
     object-fit: cover;
     object-position: 0 -150px;

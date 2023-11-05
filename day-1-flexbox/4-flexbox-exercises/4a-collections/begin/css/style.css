@@ -37,6 +37,8 @@ body {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 1rem;
+
 }
 
 section h2 {
@@ -44,57 +46,69 @@ section h2 {
 }
 
 
-ul {
+section ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-li {
-    height: auto;
-    width: auto;
-}
+
+
 
 img{
     width: 100%;
+    margin-bottom: -10px;
     display: block;
+    object-fit: cover;
+    /* object-position: 0 -150px; */
 }
 
 figure {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;    
     position: relative;
+    overflow: hidden;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 figcaption {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.875rem;
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-color: white;
-    opacity: 0.7;
-    padding: 2rem;
+    margin: 0;
 }
 
 figcaption a {
+    display: block;
+    padding: 1rem;
     text-decoration: none;
-}
+    color: var(--color1);}
 
 @media (min-width: 550px){
-    ul {
+    section ul {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        gap: 2rem;
+        justify-content: space-between;
     }
-
-    li {
-        flex-basis: 47%;
+    section li {
+        flex-basis: 49.5%;
     }
-
+    figure img {
+        object-position: 0;
+    }
 }
 
 @media (min-width: 800px){
-    li {
-        flex-basis: 30%;
+    section h2 {
+        margin-left: 100px;
+    }
+    section li {
+        flex-basis: 32.5%;
     }
 }
 
