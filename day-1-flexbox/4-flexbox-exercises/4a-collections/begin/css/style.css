@@ -36,7 +36,6 @@ body {
 
 section {
     max-width: 1200px;
-    padding: 0 1rem;
 }
 
 section h2 {
@@ -51,6 +50,9 @@ ul {
 }
 
 li {
+    height: auto;
+    width: auto;
+    margin-bottom: 1rem;
 }
 
 img{
@@ -59,6 +61,7 @@ img{
 }
 
 figure {
+    margin: 0;
     position: relative;
 }
 
@@ -73,5 +76,18 @@ figcaption {
 
 figcaption a {
     text-decoration: none;
+}
+
+@media (min-width: 550px){
+    ul {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    li {
+        flex-basis: 47%;
+    }
+
 }
 
