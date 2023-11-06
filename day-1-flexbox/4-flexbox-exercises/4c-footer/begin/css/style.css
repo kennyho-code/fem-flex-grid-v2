@@ -153,6 +153,35 @@ figcaption a {
     display: block;
 }
 
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-container{
+    background-color: var(--color5);
+
+}
+
+
+footer h4{
+    margin-top: 0;
+}
+
+
+footer .social ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+footer address {
+    font-weight: bold;
+}
+
 
 /* turn on flexbox here - prior to this, elements stacked individually as blocks */
 
@@ -180,6 +209,14 @@ figcaption a {
         shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
         max-height: 211px;
     }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    footer .social {
+        flex-basis: 52%;
+    }
 }
 
 @media (min-width: 800px) {
@@ -188,5 +225,9 @@ figcaption a {
     }
     section li {
         flex-basis: 32.5%;
+    }
+
+    footer .social {
+        flex-basis: 34%;
     }
 }

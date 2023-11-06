@@ -251,6 +251,11 @@ figcaption a {
 }
 
 
+#popular-prints {
+    background-color: var(--color2);
+}
+
+
 /* footer styles */
 
 
@@ -355,6 +360,17 @@ footer address {
         color: var(--color2);
         background-color: transparent;
     }
+    #popular-prints section li {
+        flex-basis: 49%;
+    }
+
+    #popular-prints section li:last-child {
+        flex-basis: 100%;
+    }
+
+    #popular-prints section li:last-child img{
+        object-position: 0 -350px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -385,4 +401,14 @@ footer address {
     nav li:nth-child(5) {
         order: 3;
     }
+
+    #popular-prints section li, #popular-prints section li:last-child {
+        flex-basis: 32.5%;
+    }
+
+    #popular-prints section li:last-child img{
+        object-position: 0;
+    }
+
+
 }
